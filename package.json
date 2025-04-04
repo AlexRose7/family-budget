@@ -1,0 +1,26 @@
+{
+  "name": "family_budget",
+  "version": "1.0.0",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "import": "node db/import_data.js",
+    "create-db": "node db/create_db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "pg": "^8.14.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "electron": "^35.1.2"
+  }
+}

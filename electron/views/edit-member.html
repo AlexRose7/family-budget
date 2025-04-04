@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование члена семьи</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../resources/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="../resources/logo.png" alt="Логотип" class="logo">
+        <h1>Редактирование члена семьи</h1>
+    </header>
+
+    <main>
+        <form id="member-form" class="edit-form">
+            <div class="form-group">
+                <label for="fullName">ФИО *</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <span class="error-message" id="fullName-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Дата рождения *</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+                <span class="error-message" id="birthDate-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Текущая должность</label>
+                <input type="text" id="position" name="position">
+                <span class="error-message" id="position-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="organization">Место работы</label>
+                <input type="text" id="organization" name="organization">
+                <span class="error-message" id="organization-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="salary">Текущий месячный доход</label>
+                <input type="number" id="salary" name="salary" min="0" step="1000">
+                <span class="error-message" id="salary-error"></span>
+            </div>
+
+            <div class="form-buttons">
+                <button type="button" id="back-button" class="secondary-button">Назад</button>
+                <button type="submit" id="save-button" class="primary-button">Сохранить</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../edit-member.js"></script>
+</body>
+</html>

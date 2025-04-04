@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семейный бюджет</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../resources/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="../resources/logo.png" alt="Логотип" class="logo">
+        <h1>Семейный бюджет</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <div class="section-header">
+                <h2>Список членов семьи</h2>
+                <button id="add-member" class="primary-button">Добавить члена семьи</button>
+            </div>
+            <div id="family-list" class="family-list">
+                <!-- Список членов семьи будет добавляться сюда -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Бюджет</h2>
+            <div id="budget-info" class="budget-info">
+                <p id="budget-status">Загрузка данных бюджета...</p>
+                <div id="result" class="budget-result"></div>
+                <button id="calculate-button" class="primary-button">Рассчитать баланс</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F4E8D3;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #B11AED;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #B11AED;
+}
+
+/* Список членов семьи */
+.family-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.family-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #F4E8D3;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.family-item:hover {
+    transform: translateY(-2px);
+}
+
+.family-info {
+    text-align: left;
+    width: 60%;
+}
+
+.family-info strong {
+    color: #B11AED;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.family-info span {
+    display: block;
+    margin: 5px 0;
+}
+
+.budget-ratio {
+    text-align: right;
+    width: 40%;
+}
+
+.budget-ratio strong {
+    color: #B11AED;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Форма редактирования */
+.edit-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F4E8D3;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Calibri, sans-serif;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Кнопки */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.primary-button, .secondary-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-button {
+    background-color: #B11AED;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #9615c8;
+}
+
+.secondary-button {
+    background-color: #F4E8D3;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.secondary-button:hover {
+    background-color: #e9dcc4;
+}
+
+/* Сообщения об ошибках и предупреждения */
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.error {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    border: 1px solid #ffcccc;
+}
+
+.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Стили для отображения бюджета */
+.budget-summary {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F4E8D3;
+    border-radius: 8px;
+}
+
+.total-budget {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0d0b8;
+}
+
+.expenses-by-category {
+    text-align: left;
+}
+
+.expenses-by-category h3 {
+    color: #B11AED;
+    margin-bottom: 15px;
+}
+
+.expense-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.expense-category:hover {
+    transform: translateX(5px);
+}
+
+.category-name {
+    color: #333;
+    font-weight: bold;
+}
+
+.category-amount {
+    color: #B11AED;
+}
